@@ -1,5 +1,3 @@
-a = [1, 3, 8, 2, 9, 2, 5, 6]
-
 
 def bubble_sort(a: list) -> list:
     """
@@ -18,7 +16,7 @@ def bubble_sort(a: list) -> list:
                 a[j] = a[j + 1]
                 a[j + 1] = temp
 
-    return a
+
 
 
 def inverse_bubble_sort(a: list) -> list:
@@ -38,8 +36,9 @@ def inverse_bubble_sort(a: list) -> list:
                 a[j] = a[j + 1]
                 a[j + 1] = temp
 
-    return a
 
-
-print(bubble_sort(a))
-print(inverse_bubble_sort(a))
+a = [1, 3, 8, 2, 9, 2, 5, 6]
+bubble_sort(a)
+print(a)
+inverse_bubble_sort(a)
+print(a)
